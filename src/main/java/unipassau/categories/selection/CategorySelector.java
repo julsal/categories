@@ -72,7 +72,7 @@ public class CategorySelector {
             min = Integer.min(min, this.descriptionSize.get(categ));
         }
 
-        int numBuckets = 10;
+        int numBuckets = 11;
         List<String>[] buckets = new List[numBuckets];
         for (int i = 0; i < numBuckets; i++) {
             buckets[i] = new LinkedList<>();
@@ -104,7 +104,7 @@ public class CategorySelector {
         PopularitySorter sorter = new PopularitySorter(this.categPopularity);
         Set<String> categories = new HashSet<>();
 
-        final int TOTAL = 100;
+        final int TOTAL = 110;
 
         for (int i = 0; i < numBuckets; i++) {
             buckets[i].sort(sorter);
